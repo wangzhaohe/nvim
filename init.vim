@@ -7,13 +7,12 @@ set ignorecase
 set smartcase
 set noshowmode
 set noshowcmd
-set noexpandtab
+set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set scrolloff=5
 set clipboard+=unnamedplus
-set updatetime=100
 set shortmess+=c
 set signcolumn=number
 set hidden
@@ -48,6 +47,53 @@ inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
+
+" Windows
+nmap <silent> sH :set nosplitright<CR>:vsplit<CR>
+nmap <silent> sJ :set splitbelow<CR>:split<CR>
+nmap <silent> sK :set nosplitbelow<CR>:split<CR>
+nmap <silent> sL :set splitright<CR>:vsplit<CR>
+nmap <silent> <Space>1 :1wincmd w<CR>
+nmap <silent> <Space>2 :2wincmd w<CR>
+nmap <silent> <Space>3 :3wincmd w<CR>
+nmap <silent> <Space>4 :4wincmd w<CR>
+nmap <silent> <Space>5 :5wincmd w<CR>
+nmap <silent> <Space>6 :6wincmd w<CR>
+nmap <silent> <Space>7 :7wincmd w<CR>
+nmap <silent> <Space>8 :8wincmd w<CR>
+nmap <silent> <Space>9 :9wincmd w<CR>
+nmap sh <C-w>h
+nmap sj <C-w>j
+nmap sk <C-w>k
+nmap sl <C-w>l
+nmap <silent> s- :res -5<CR>
+nmap <silent> s= :res +5<CR>
+nmap <silent> s[ :vertical res -5<CR>
+nmap <silent> s] :vertical res +5<CR>
+nmap sb <C-w>t<C-w>K
+nmap sv <C-w>t<C-w>H
+noremap srb <C-w>b<C-w>K
+noremap srv <C-w>b<C-w>H
+noremap <silent> sth :set nosplitright<CR>:vsplit<CR>:term<CR>i
+noremap <silent> stj :set splitbelow<CR>:split<CR>:term<CR>i
+noremap <silent> stk :set nosplitbelow<CR>:split<CR>:term<CR>i
+noremap <silent> stl :set splitright<CR>:vsplit<CR>:term<CR>i
+noremap <silent> stt :tabe<CR>:term<CR>i
+
+" Tabs
+nmap <silent> tn :tabe<CR>
+nmap <silent> t1 <Plug>AirlineSelectTab1
+nmap <silent> t2 <Plug>AirlineSelectTab2
+nmap <silent> t3 <Plug>AirlineSelectTab3
+nmap <silent> t4 <Plug>AirlineSelectTab4
+nmap <silent> t5 <Plug>AirlineSelectTab5
+nmap <silent> t6 <Plug>AirlineSelectTab6
+nmap <silent> t7 <Plug>AirlineSelectTab7
+nmap <silent> t8 <Plug>AirlineSelectTab8
+nmap <silent> t9 <Plug>AirlineSelectTab9
+nmap <silent> t0 <Plug>AirlineSelectTab0
+nmap <silent> th <Plug>AirlineSelectPrevTab
+nmap <silent> tl <Plug>AirlineSelectNextTab
 
 noremap <Space>r :call CompileRunGcc()<CR>
 func! CompileRunGcc()
