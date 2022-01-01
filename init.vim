@@ -103,4 +103,19 @@ endfunc
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
+Plug 'theniceboy/nvim-deus'
 call plug#end()
+
+" ===
+" === gruvbox
+" ===
+"color gruvbox
+
+" ===
+" === nvim-deus
+" ===
+color deus
+
+source ~/.config/nvim/config/plugins/vim-airline.vim
