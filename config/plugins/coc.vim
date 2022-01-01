@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
 	\ 'coc-clangd',
 	\ 'coc-python',
 	\ 'coc-pyright',
+	\ 'coc-flutter-tools',
 	\ 'coc-yank',
 	\ 'coc-explorer',
 	\ 'coc-pairs']
@@ -54,6 +55,9 @@ nmap <Space>aw  <Plug>(coc-codeaction-selected)w
 
 nnoremap <silent><nowait><expr> <C-]> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-]>"
 nnoremap <silent><nowait><expr> <C-[> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-[>"
+
+" === coc-flutter-tools
+nmap <silent> <Space>ol :CocCommand flutter.toggleOutline<CR>
 
 " === coc-explorer
 nmap <silent> <Space>t :CocCommand explorer<CR>
