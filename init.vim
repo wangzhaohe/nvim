@@ -152,6 +152,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'theniceboy/nvim-deus'
+Plug 'mbbill/undotree'
+Plug 'gcmt/wildfire.vim'
+Plug 'mg979/vim-visual-multi'
+Plug 'tpope/vim-surround'
+Plug 'luochen1990/rainbow'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " ===
@@ -165,3 +171,6 @@ call plug#end()
 color deus
 
 source ~/.config/nvim/config/plugins/vim-airline.vim
+source ~/.config/nvim/config/plugins/undotree.vim
+source ~/.config/nvim/config/plugins/rainbow.vim
+source ~/.config/nvim/config/plugins/nerdcommenter.vim
