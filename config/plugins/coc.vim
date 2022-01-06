@@ -9,8 +9,7 @@ let g:coc_global_extensions = [
 	\ 'coc-pyright',
 	\ 'coc-flutter-tools',
 	\ 'coc-yank',
-	\ 'coc-explorer',
-	\ 'coc-pairs']
+	\ 'coc-explorer']
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :

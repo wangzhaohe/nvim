@@ -156,6 +156,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mbbill/undotree'
+Plug 'jiangmiao/auto-pairs'
 Plug 'gcmt/wildfire.vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-surround'
@@ -179,3 +180,4 @@ source ~/.config/nvim/config/plugins/rainbow.vim
 source ~/.config/nvim/config/plugins/nerdcommenter.vim
 source ~/.config/nvim/config/plugins/coc.vim
 source ~/.config/nvim/config/md-snippets.vim
+
