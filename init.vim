@@ -189,6 +189,7 @@ source ~/.config/nvim/config/plugins/rainbow.vim
 source ~/.config/nvim/config/plugins/nerdcommenter.vim
 source ~/.config/nvim/config/plugins/coc.vim
 source ~/.config/nvim/config/md-snippets.vim
+source ~/.config/nvim/config/plugins/indentLine.vim
 
 " indentLine
 map <F3> :IndentLinesToggle<cr>
