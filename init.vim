@@ -6,7 +6,8 @@ set termencoding=utf-8
 set ignorecase
 set smartcase
 set noshowmode
-set noshowcmd
+"set noshowcmd
+set showcmd
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -14,11 +15,16 @@ set softtabstop=2
 set scrolloff=5
 set clipboard+=unnamedplus
 set shortmess+=c
-set signcolumn=number
+"set signcolumn=number
+set signcolumn=yes
 set hidden
 set termguicolors
 set updatetime=100
+set foldmethod=indent
 
+set cursorline
+"set cursorcolumn
+set mouse=a
 silent !mkdir -p $HOME/.config/nvim/tmp/backup
 silent !mkdir -p $HOME/.config/nvim/tmp/undo
 set backupdir=$HOME/.config/nvim/tmp/backup,.
@@ -31,11 +37,11 @@ nnoremap W :w<CR>
 nmap R :source $MYVIMRC<CR>
 
 noremap ; :
-noremap H ^
-noremap L $
+"noremap H ^
+"noremap L $
 noremap ` ~
-noremap J 5j
-noremap K 5k
+"noremap J 5j
+"noremap K 5k
 noremap > >>
 noremap < <<
 nnoremap vv ^v$h
@@ -82,6 +88,7 @@ noremap <silent> stt :tabe<CR>:term<CR>i
 
 " Tabs
 nmap <silent> tn :tabe<CR>
+nmap <silent> tb :tabNext<CR>
 nmap <silent> t1 <Plug>AirlineSelectTab1
 nmap <silent> t2 <Plug>AirlineSelectTab2
 nmap <silent> t3 <Plug>AirlineSelectTab3
@@ -161,7 +168,9 @@ Plug 'gcmt/wildfire.vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-surround'
 Plug 'luochen1990/rainbow'
+Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
+Plug 'godlygeek/tabular'
 call plug#end()
 
 " ===
@@ -181,3 +190,6 @@ source ~/.config/nvim/config/plugins/nerdcommenter.vim
 source ~/.config/nvim/config/plugins/coc.vim
 source ~/.config/nvim/config/md-snippets.vim
 
+" indentLine
+map <F3> :IndentLinesToggle<cr>
+"colorscheme desert
