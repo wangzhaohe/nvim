@@ -162,6 +162,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-surround'
 Plug 'luochen1990/rainbow'
 Plug 'preservim/nerdcommenter'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " ===
@@ -180,4 +181,5 @@ source ~/.config/nvim/config/plugins/rainbow.vim
 source ~/.config/nvim/config/plugins/nerdcommenter.vim
 source ~/.config/nvim/config/plugins/coc.vim
 source ~/.config/nvim/config/md-snippets.vim
+source ~/.config/nvim/config/plugins/indentLine.vim
 
