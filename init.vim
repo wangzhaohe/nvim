@@ -47,6 +47,8 @@ noremap < <<
 nnoremap vv ^v$h
 nmap <silent> <Space><CR> :nohlsearch<CR>
 
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 
