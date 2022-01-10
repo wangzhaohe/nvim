@@ -193,3 +193,4 @@ source ~/.config/nvim/config/plugins/indentLine.vim
 " indentLine
 map <F3> :IndentLinesToggle<cr>
 "colorscheme desert
+
