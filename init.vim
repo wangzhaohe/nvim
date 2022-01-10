@@ -140,7 +140,10 @@ func! CompileRunGcc()
 		silent! exec "VimtexStop"
 		silent! exec "VimtexCompile"
 	elseif &filetype == 'dart'
-		silent! exec "CocCommand flutter.run"
+    set splitbelow
+    :sp
+    :term dart %
+    "silent! exec "CocCommand flutter.run"
 	elseif &filetype == 'javascript'
 		set splitbelow
 		:sp
