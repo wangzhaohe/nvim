@@ -44,5 +44,11 @@
     "dart"
   ],
   "explorer.icon.enableNerdfont": true,
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "$HOME/.config/nvim/Ultisnips/",
+    "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
+  ],
+  "python.jediEnabled": false
 }
