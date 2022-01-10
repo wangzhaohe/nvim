@@ -2,14 +2,16 @@
 " === coc.nvim
 " ===
 let g:coc_global_extensions = [
-	\ 'coc-json',
-	\ 'coc-vimlsp',
 	\ 'coc-clangd',
+	\ 'coc-explorer',
+	\ 'coc-flutter-tools',
+	\ 'coc-json',
 	\ 'coc-python',
 	\ 'coc-pyright',
-	\ 'coc-flutter-tools',
-	\ 'coc-yank',
-	\ 'coc-explorer']
+  \ 'coc-snippets',
+	\ 'coc-vimlsp',
+  \ 'coc-yaml',
+	\ 'coc-yank',]
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -55,6 +57,11 @@ nmap <Space>aw  <Plug>(coc-codeaction-selected)w
 nnoremap <silent><nowait><expr> <C-]> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-]>"
 nnoremap <silent><nowait><expr> <C-[> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-[>"
 
+" coc-snippets
+let g:coc_snippet_next = '<C-l>'
+let g:coc_snippet_prev = '<C-h>'
+let g:snips_author = '2018WANZ24'
+
 " === coc-flutter-tools
 nmap <silent> <Space>ol :CocCommand flutter.toggleOutline<CR>
 
@@ -64,3 +71,4 @@ nmap <silent> <Space>t :CocCommand explorer<CR>
 " === coc-yank
 nmap <silent> <Space>yy :<C-u>CocList -A --normal yank<CR>
 nmap <Space>yc :CocCommand yank.clean<CR>
+

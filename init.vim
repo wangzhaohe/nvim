@@ -27,7 +27,7 @@ set directory=$HOME/.config/nvim/tmp/backup,.
 set undofile
 set undodir=$HOME/.config/nvim/tmp/undo,.
 
-nnoremap <silent> q :q<CR>
+nnoremap <silent> q :close<CR>
 nnoremap W :w<CR>
 nmap R :source $MYVIMRC<CR>
 
@@ -42,10 +42,8 @@ noremap < <<
 nnoremap vv ^v$h
 nmap <silent> <Space><CR> :nohlsearch<CR>
 
-inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
-inoremap <C-l> <Right>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 
@@ -154,6 +152,7 @@ Plug 'morhetz/gruvbox'
 Plug 'theniceboy/nvim-deus'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'honza/vim-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs'
