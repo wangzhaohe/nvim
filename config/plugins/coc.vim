@@ -55,7 +55,7 @@ let g:snips_author = '2018WANZ24'
 nmap <silent> <Space>ol :CocCommand flutter.toggleOutline<CR>
 
 " === coc-explorer
-nmap <silent> <Space>t :CocCommand explorer<CR>
+nmap <silent> <F3> :CocCommand explorer<CR>
 
 " === coc-yank
 nmap <silent> <Space>yy :<C-u>CocList -A --normal yank<CR>

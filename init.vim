@@ -94,7 +94,7 @@ nmap <silent> t0 <Plug>AirlineSelectTab0
 nmap <silent> th <Plug>AirlineSelectPrevTab
 nmap <silent> tl <Plug>AirlineSelectNextTab
 
-noremap <Space>r :call CompileRunGcc()<CR>
+noremap <Space>e :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
