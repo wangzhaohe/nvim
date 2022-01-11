@@ -1,10 +1,10 @@
 " ===
 " === fzf.vim
 " ===
-nnoremap <C-f> :Files<CR>
-nnoremap <C-p> :Ag<CR>
-nnoremap <C-b> :Buffers<CR>
-nnoremap <C-l> :BLines<CR>
-nnoremap <C-c> :Commands<CR>
+nnoremap <Space>f :Files<CR>
+nnoremap <Space>p :Ag<CR>
+nnoremap <Space>b :Buffers<CR>
+nnoremap <Space>l :BLines<CR>
+nnoremap <Space>c :Commands<CR>
 let g:fzf_buffers_jump = 1
 

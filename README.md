@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## MacOs Install
 
 ### install nvim
