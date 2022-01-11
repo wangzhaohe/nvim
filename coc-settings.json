@@ -1,7 +1,8 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
-  "suggest.noselect": true,
-  "suggest.enablePreselect": false,
+  "suggest.numberSelect": true,
+  "suggest.triggerCompletionWait": 50,
+  "suggest.defaultSortMethod": "alphabetical",
   "suggest.completionItemKindLabels": {
     "class": "\uf0e8",
     "color": "\ue22b",
@@ -33,7 +34,6 @@
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf129",
   "diagnostic.hintSign": "\uf864",
-  "diagnostic.displayByAle": false,
   "diagnostic.refreshOnInsertMode": false,
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualTextPrefix": " ❯❯❯ ",
@@ -44,6 +44,7 @@
     "dart"
   ],
   "explorer.icon.enableNerdfont": true,
+  "explorer.width": 35,
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
   "snippets.ultisnips.directories": [
     "UltiSnips",
