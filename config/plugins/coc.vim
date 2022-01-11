@@ -14,6 +14,9 @@ let g:coc_global_extensions = [
   \ 'coc-yaml',
 	\ 'coc-yank',]
 
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+
 inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
 inoremap <silent><expr> <c-o> coc#refresh()
@@ -40,8 +43,8 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 nmap <Space>rn <Plug>(coc-rename)
-xmap <Space>f  <Plug>(coc-format-selected)
-nmap <Space>f  <Plug>(coc-format-selected)
+xmap <Space>m  <Plug>(coc-format-selected)
+nmap <Space>m  <Plug>(coc-format-selected)
 
 xmap <Space>a  <Plug>(coc-codeaction-selected)
 nmap <Space>aw  <Plug>(coc-codeaction-selected)w
@@ -59,8 +62,8 @@ nnoremap <silent><nowait><expr> <C-]> coc#float#has_scroll() ? coc#float#scroll(
 nnoremap <silent><nowait><expr> <C-[> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-[>"
 
 " coc-snippets
-map <C-h> <nop>
-map <C-l> <nop>
+imap <C-h> <nop>
+imap <C-l> <nop>
 let g:coc_snippet_next = '<C-l>'
 let g:coc_snippet_prev = '<C-h>'
 let g:snips_author = '2018WANZ24'
