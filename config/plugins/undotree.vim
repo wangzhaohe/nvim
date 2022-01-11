@@ -1,5 +1,5 @@
 " ===
 " === undotree
 " ===
-nmap <Space>u :UndotreeToggle<CR>
+nmap <F4> :UndotreeToggle<CR>
 

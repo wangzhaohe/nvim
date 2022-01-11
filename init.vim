@@ -51,6 +51,7 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
+imap jj <ESC>
 
 " Windows
 nmap <silent> sH :set nosplitright<CR>:vsplit<CR>
@@ -100,7 +101,7 @@ nmap <silent> t0 <Plug>AirlineSelectTab0
 nmap <silent> th <Plug>AirlineSelectPrevTab
 nmap <silent> tl <Plug>AirlineSelectNextTab
 
-noremap <Space>r :call CompileRunGcc()<CR>
+noremap <Space>e :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
