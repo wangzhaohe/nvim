@@ -32,6 +32,8 @@ set directory=$HOME/.config/nvim/tmp/backup,.
 set undofile
 set undodir=$HOME/.config/nvim/tmp/undo,.
 
+map <C-h> <nop>
+map <C-l> <nop>
 nnoremap <silent> q :close<CR>
 nnoremap W :w<CR>
 nmap R :source $MYVIMRC<CR>
@@ -87,17 +89,16 @@ noremap <silent> stt :tabe<CR>:term<CR>i
 
 " Tabs
 nmap <silent> tn :tabe<CR>
-nmap <silent> tb :tabNext<CR>
-nmap <silent> t1 <Plug>AirlineSelectTab1
-nmap <silent> t2 <Plug>AirlineSelectTab2
-nmap <silent> t3 <Plug>AirlineSelectTab3
-nmap <silent> t4 <Plug>AirlineSelectTab4
-nmap <silent> t5 <Plug>AirlineSelectTab5
-nmap <silent> t6 <Plug>AirlineSelectTab6
-nmap <silent> t7 <Plug>AirlineSelectTab7
-nmap <silent> t8 <Plug>AirlineSelectTab8
-nmap <silent> t9 <Plug>AirlineSelectTab9
-nmap <silent> t0 <Plug>AirlineSelectTab0
+nmap <silent> <Leader>1 <Plug>AirlineSelectTab1
+nmap <silent> <Leader>2 <Plug>AirlineSelectTab2
+nmap <silent> <Leader>3 <Plug>AirlineSelectTab3
+nmap <silent> <Leader>4 <Plug>AirlineSelectTab4
+nmap <silent> <Leader>5 <Plug>AirlineSelectTab5
+nmap <silent> <Leader>6 <Plug>AirlineSelectTab6
+nmap <silent> <Leader>7 <Plug>AirlineSelectTab7
+nmap <silent> <Leader>8 <Plug>AirlineSelectTab8
+nmap <silent> <Leader>9 <Plug>AirlineSelectTab9
+nmap <silent> <Leader>0 <Plug>AirlineSelectTab0
 nmap <silent> th <Plug>AirlineSelectPrevTab
 nmap <silent> tl <Plug>AirlineSelectNextTab
 
@@ -194,6 +195,6 @@ source ~/.config/nvim/config/md-snippets.vim
 source ~/.config/nvim/config/plugins/indentLine.vim
 
 " indentLine
-map <F3> :IndentLinesToggle<cr>
+map <F5> :IndentLinesToggle<cr>
 "colorscheme desert
 
