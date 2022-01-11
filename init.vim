@@ -18,7 +18,7 @@ set signcolumn=number
 set hidden
 set termguicolors
 set updatetime=100
-set foldmethod=indent
+"set foldmethod=indent
 
 silent !mkdir -p $HOME/.config/nvim/tmp/backup
 silent !mkdir -p $HOME/.config/nvim/tmp/undo
@@ -27,25 +27,18 @@ set directory=$HOME/.config/nvim/tmp/backup,.
 set undofile
 set undodir=$HOME/.config/nvim/tmp/undo,.
 
-nnoremap <silent> q :close<CR>
-nnoremap W :w<CR>
-nmap R :source $MYVIMRC<CR>
-
-noremap ; :
 noremap H ^
 noremap L $
-noremap ` ~
 noremap J 5j
 noremap K 5k
 noremap > >>
 noremap < <<
+noremap ` ~
+noremap ; :
 nnoremap vv ^v$h
 nmap <silent> <Space><CR> :nohlsearch<CR>
-
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-a> <Home>
-inoremap <C-e> <End>
+nnoremap <silent> q :close<CR>
+nnoremap W :w<CR>
 
 " Windows
 nmap <silent> sH :set nosplitright<CR>:vsplit<CR>
@@ -65,10 +58,10 @@ nmap sh <C-w>h
 nmap sj <C-w>j
 nmap sk <C-w>k
 nmap sl <C-w>l
-nmap <silent> s- :res -5<CR>
-nmap <silent> s= :res +5<CR>
-nmap <silent> s[ :vertical res -5<CR>
-nmap <silent> s] :vertical res +5<CR>
+nmap <silent> <Up> :res +5<CR>
+nmap <silent> <Down> :res -5<CR>
+nmap <silent> <Right> :vertical res +5<CR>
+nmap <silent> <Left> :vertical res -5<CR>
 nmap sb <C-w>t<C-w>K
 nmap sv <C-w>t<C-w>H
 noremap srb <C-w>b<C-w>K
@@ -146,24 +139,28 @@ endfunc
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" === Language servers
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+" Other plugins
 Plug 'morhetz/gruvbox'
 Plug 'theniceboy/nvim-deus'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'honza/vim-snippets'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'mbbill/undotree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vista.vim'
+Plug 'mbbill/undotree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'gcmt/wildfire.vim'
-Plug 'mg979/vim-visual-multi'
-Plug 'tpope/vim-surround'
-Plug 'luochen1990/rainbow'
 Plug 'preservim/nerdcommenter'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
+Plug 'gcmt/wildfire.vim'
+Plug 'tpope/vim-surround'
+Plug 'mg979/vim-visual-multi'
 Plug 'Yggdroot/indentLine'
 call plug#end()
 
@@ -177,13 +174,13 @@ call plug#end()
 " ===
 color deus
 
-source ~/.config/nvim/config/plugins/vim-airline.vim
-source ~/.config/nvim/config/plugins/undotree.vim
-source ~/.config/nvim/config/plugins/rainbow.vim
-source ~/.config/nvim/config/plugins/nerdcommenter.vim
 source ~/.config/nvim/config/plugins/coc.vim
-source ~/.config/nvim/config/md-snippets.vim
-source ~/.config/nvim/config/plugins/indentLine.vim
+source ~/.config/nvim/config/plugins/vim-airline.vim
 source ~/.config/nvim/config/plugins/vista.vim
+source ~/.config/nvim/config/plugins/undotree.vim
 source ~/.config/nvim/config/plugins/fzf.vim
-
+source ~/.config/nvim/config/plugins/nerdcommenter.vim
+source ~/.config/nvim/config/plugins/vim-table-mode.vim
+source ~/.config/nvim/config/plugins/rainbow.vim
+source ~/.config/nvim/config/plugins/indentLine.vim
+source ~/.config/nvim/config/md-snippets.vim
