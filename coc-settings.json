@@ -40,8 +40,7 @@
   "diagnostic.virtualText": true,
   "codeLens.enable": true,
   "coc.preferences.formatOnSaveFiletypes": [
-    "json",
-    "dart"
+    "json"
   ],
   "explorer.icon.enableNerdfont": true,
   "explorer.width": 35,
