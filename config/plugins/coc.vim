@@ -58,6 +58,8 @@ nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(
 nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-[>"
 
 " coc-snippets
+map <C-h> <nop>
+map <C-l> <nop>
 let g:coc_snippet_next = '<C-l>'
 let g:coc_snippet_prev = '<C-h>'
 let g:snips_author = '2018WANZ24'
