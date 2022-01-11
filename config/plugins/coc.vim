@@ -5,6 +5,7 @@ let g:coc_global_extensions = [
 	\ 'coc-clangd',
 	\ 'coc-explorer',
 	\ 'coc-flutter-tools',
+  \ 'coc-go',
 	\ 'coc-json',
 	\ 'coc-python',
 	\ 'coc-pyright',
