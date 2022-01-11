@@ -27,8 +27,6 @@ set directory=$HOME/.config/nvim/tmp/backup,.
 set undofile
 set undodir=$HOME/.config/nvim/tmp/undo,.
 
-map <C-h> <nop>
-map <C-l> <nop>
 nnoremap <silent> q :close<CR>
 nnoremap W :w<CR>
 nmap R :source $MYVIMRC<CR>
@@ -157,6 +155,9 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'honza/vim-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mbbill/undotree'
+Plug 'liuchengxu/vista.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'gcmt/wildfire.vim'
 Plug 'mg979/vim-visual-multi'
@@ -183,4 +184,6 @@ source ~/.config/nvim/config/plugins/nerdcommenter.vim
 source ~/.config/nvim/config/plugins/coc.vim
 source ~/.config/nvim/config/md-snippets.vim
 source ~/.config/nvim/config/plugins/indentLine.vim
+source ~/.config/nvim/config/plugins/vista.vim
+source ~/.config/nvim/config/plugins/fzf.vim
 

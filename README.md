@@ -1,4 +1,4 @@
-# nvimrc
+# nvim
 My neovim config
 <center><img src="https://raw.githubusercontent.com/2018WANZ24/nvimrc/master/demo.png"></center>
 
@@ -14,6 +14,6 @@ mv nvim nvim_back
 * If you need C/C++/Objective-C language server(coc-clangd), install [clangd](https://clangd.llvm.org/installation)
 * Clone this repository:
 ```
-git clone https://github.com/2018WANZ24/nvimrc.git ~/.config/nvim/
+git clone https://github.com/2018WANZ24/nvimrc.git ~/.config/
 ```
 * In nvim, run `:PlugInstall`
