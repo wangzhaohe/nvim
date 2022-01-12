@@ -91,7 +91,7 @@ The plugin manager is [vim-plug](https://github.com/junegunn/vim-plug).
 | \<C-j>         | Next completion                                                                  |
 | \<C-k>         | Previous completion                                                              |
 | \<Tab>         | Complete                                                                         |
-| \<C-o>         | Show completions                                                                 |
+| \<C-s>         | Refresh completions                                                              |
 | [g             | Go to previous diagnostic                                                        |
 | ]g             | Go to next diagnostic                                                            |
 | gd             | Go to definition                                                                 |
@@ -99,8 +99,6 @@ The plugin manager is [vim-plug](https://github.com/junegunn/vim-plug).
 | gi             | Go to implementation                                                             |
 | gr             | Go to references                                                                 |
 | \<Space>h      | Show documentation                                                               |
-| ctrl + w + w   | Go to documentation                                                              |
-| q              | Exit documentation                                                               |
 | \<Space>rn     | Rename                                                                           |
 | \<Space>m      | Format selected                                                                  |
 | \<Space>a      | Code actions (on visual mode)                                                    |
@@ -110,6 +108,7 @@ The plugin manager is [vim-plug](https://github.com/junegunn/vim-plug).
 | \<operation>ic | Operation for what is in a class                                                 |
 | \<operation>ac | Operation for the whole class                                                    |
 | \<C-]>/<C-[>   | Scroll a floating window                                                         |
+| sw             | Go to a floating window                                                          |
 | \<C-l>         | Jump to next snippets placeholder (on insert mode)                               |
 | \<C-h>         | Jump to previous snippets placeholder (on insert mode)                           |
 | \<F3>          | Toggle file explorer ([coc-explorer](https://github.com/weirongxu/coc-explorer)) |
@@ -131,11 +130,10 @@ The plugin manager is [vim-plug](https://github.com/junegunn/vim-plug).
 
 * [vista.vim](https://github.com/liuchengxu/vista.vim)
 
-| Shortcut  | Action           |
-|-----------|------------------|
-| \<F2>     | Toggle taglist   |
-| \<Space>t | Vista finder coc |
-
+| Shortcut  | Action         |
+|-----------|----------------|
+| \<F2>     | Toggle taglist |
+| \<Space>t | Search tags    |
 
 * [undotree](https://github.com/mbbill/undotree)
 
@@ -161,11 +159,9 @@ The plugin manager is [vim-plug](https://github.com/junegunn/vim-plug).
 
 * [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 
-| Shortcut    | Action            |
-|-------------|-------------------|
+| Shortcut   | Action            |
+|------------|-------------------|
 | \<Leader>tm | Toggle table mode |
-| <Space>t    | Vista finder coc  |
-
 
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 

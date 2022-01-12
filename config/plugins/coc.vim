@@ -20,9 +20,12 @@ let g:coc_global_extensions = [
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+
 inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
-inoremap <silent><expr> <c-o> coc#refresh()
+inoremap <silent><expr> <c-s> coc#refresh()
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -63,6 +66,8 @@ omap ac <Plug>(coc-classobj-a)
 
 nnoremap <silent><nowait><expr> <C-]> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-]>"
 nnoremap <silent><nowait><expr> <C-[> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-[>"
+
+nnoremap sw <C-w>w
 
 " coc-snippets
 imap <C-h> <nop>

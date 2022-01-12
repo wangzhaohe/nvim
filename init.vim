@@ -32,10 +32,7 @@ set directory=$HOME/.config/nvim/tmp/backup,.
 set undofile
 set undodir=$HOME/.config/nvim/tmp/undo,.
 
-nnoremap <silent> q :close<CR>
-nnoremap W :w<CR>
-nmap R :source $MYVIMRC<CR>
-
+"nmap R :source $MYVIMRC<CR>
 noremap H ^
 noremap L $
 noremap J 5j
@@ -46,10 +43,7 @@ noremap ` ~
 noremap ; :
 nnoremap vv ^v$h
 nmap <silent> <Space><CR> :nohlsearch<CR>
-
 imap jj <ESC>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 nnoremap <silent> q :close<CR>
