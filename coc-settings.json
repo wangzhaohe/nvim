@@ -50,5 +50,8 @@
     "$HOME/.config/nvim/Ultisnips/",
     "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
   ],
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "go.goplsOptions": {
+    "completeUnimported": true
+  }
 }
